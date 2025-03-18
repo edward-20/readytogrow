@@ -210,10 +210,8 @@ nav{
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   align-items: center;
   position: relative;
-  padding-top: 90px;
 }
 
 .home .content {
