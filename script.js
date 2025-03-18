@@ -16,7 +16,7 @@ menuBtn.addEventListener('click', () => {
 });
 
 // Optional: Close menu when clicking a navbar link (on mobile)
-document.querySelectorAll('.navbar a').forEahch(link => {
+document.querySelectorAll('.navbar a').forEach(link => {
     link.addEventListener('click', () => {
         if (navbar.classList.contains('active')) {
             navbar.classList.remove('active'); // Close menu after clicking a link
