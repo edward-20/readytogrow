@@ -12,6 +12,11 @@
     --tablet-max: 768px;
     --laptop-max: 1024px;
     --desktop-max: 1200px;
+
+    --hx-padding-tablet-max: 7%;
+    --hx-padding-laptop-max: 10%;
+    --hx-padding-desktop-max: 15%;
+    --hx-padding-large-max: 20%;
 }
 
 *{
@@ -29,10 +34,6 @@ html{
   overflow-x: hidden;
   scroll-behavior: smooth;
   width: 100vw;
-}
-
-section{
-  padding: 3rem 7%;
 }
 
 .heading{
@@ -108,13 +109,34 @@ p {
   background-color: white; /* Ensure background is visible */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   border-bottom: 1px solid #ddd; /* Clean underline */
-  padding: 0 7%; /* Add spacing inside header */
+  padding: 0 20%; /* Add spacing inside header */
   height: 90px; /* Set a fixed height */
   box-sizing: border-box; /* Include padding in height */
   width: 100vw;
-  gap: 1rem;
+  gap: 2rem;
 }
 
+
+@media (max-width: 768px) {
+  .header {
+    padding: 3rem var(--hx-padding-tablet-max);
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    padding: 3rem var(--hx-padding-laptop-max);
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    padding: 3rem var(--hx-padding-desktop-max);
+  }
+}
+@media (min-width: 1201px) {
+  .header {
+    padding: 3rem var(--hx-padding-large-max);
+  }
+}
 
 nav{
   text-align: center;
@@ -151,7 +173,7 @@ nav{
   font-size: 2.5rem;
   font-weight: bolder;
   color: var(--blue);
-  height: 100%;
+  height: 80px;
   width: 20%;
   display: flex;
   justify-content: start;
@@ -767,6 +789,27 @@ footer {
   }
   .home .content h3{
     font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 3rem var(--hx-padding-tablet-max);
+  }
+}
+@media (max-width: 1024px) {
+  section {
+    padding: 3rem var(--hx-padding-laptop-max);
+  }
+}
+@media (max-width: 1200px) {
+  section {
+    padding: 3rem var(--hx-padding-desktop-max);
+  }
+}
+@media (min-width: 1201px) {
+  section {
+    padding: 3rem var(--hx-padding-large-max);
   }
 }
 
