@@ -112,6 +112,7 @@ p {
   height: 90px; /* Set a fixed height */
   box-sizing: border-box; /* Include padding in height */
   width: 100vw;
+  gap: 1rem;
 }
 
 
@@ -138,6 +139,12 @@ nav{
   display: flex; /* Align navigation links in a row */
   flex-wrap: wrap;
   gap: 2rem; /* Add spacing between links */
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 1rem;
+  }
 }
 
 .header .logo{
