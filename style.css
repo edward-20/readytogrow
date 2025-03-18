@@ -207,14 +207,14 @@ nav{
 /* home */
 
 .home {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
   position: relative;
-  padding-top: -1rem; /* Reduced padding-top */
-  margin-top: -14rem; /* Increased negative margin */
+  padding-top: 90px; /* Reduced padding-top */
+  /*margin-top: -14rem; /* Increased negative margin */
 }
 
 .home .content {
