@@ -107,7 +107,6 @@ p {
   height: 90px; /* Set a fixed height */
   box-sizing: border-box; /* Include padding in height */
   width: 100vw;
-  border: black solid 2px;
 }
 
 
@@ -300,11 +299,23 @@ nav{
 
 /* services */
 
-.services .box-container{
+.box-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
+  padding: 0 3rem;
+}
+
+@media (max-width: 768px) {
+  .box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width:769px) and (max-width: 1080px) {
+  .box-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .services .box-container .box{
