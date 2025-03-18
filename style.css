@@ -213,8 +213,7 @@ nav{
   gap: 1rem;
   align-items: center;
   position: relative;
-  padding-top: 90px; /* Reduced padding-top */
-  /*margin-top: -14rem; /* Increased negative margin */
+  padding-top: 90px;
 }
 
 .home .content {
