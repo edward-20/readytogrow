@@ -341,57 +341,6 @@ nav{
   line-height: 2;
 }
 
-/*
-.about .heading span {
-  color: #FFFFFF; /* Use the light gray variable */
-/*
-}
-
-.about .row{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.about .row .image{
-  flex: 1 1 50rem;
-}
-
-.about .row .image img{
-  width: 100%;
-  height: 100%;
-}
-
-.about .row .content{
-  flex: 1 1 40rem;
-}
-
-.about .row .content h3{
-  font-size: 3.5rem;
-  color: var(--white);
-  line-height: 1.5;
-}
-
-.about .row .content p{
-  font-size: 1.4rem;
-  color: var(--white);
-  padding: 1rem 0;
-  line-height: 2;
-}
-
-.about .row .image {
-  flex: 1 1 50rem;
-  display: flex;
-  align-items: flex-start; /* Align the image higher (top-aligned) */
-  /*
-  justify-content: center;  /* Center horizontally if needed */
-  /*
-  margin-top: -3rem; /* Move the image up (adjust the value if needed) */
-/*
-}
-*/
-
 /* end */
 
 
