@@ -949,6 +949,12 @@ ul li {
   justify-content: center;
 }
 
+#about-page-main > .content > h3 {
+  color: var(--blue);
+}
+#about-page-main > .content > p {
+  color: var(--light-color);
+}
 @media (max-width: 767px) {
   #about-page-main {
     flex-direction: column; 
