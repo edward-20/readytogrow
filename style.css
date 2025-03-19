@@ -291,6 +291,7 @@ nav{
 .about{
   background: #1CA2A5;
   height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,7 +302,7 @@ nav{
     flex-direction: column;
   }
   .about > * {
-    width: 50%;
+    width: 100%;
   }
 }
 @media (min-width: 769px) {
@@ -917,8 +918,6 @@ ul li {
 }
 
 .services-intro {
-  padding-top: 0rem; /* Remove extra padding to bring section closer */
-  margin-top: -12rem; /* Increase negative margin to pull the section up more */
 }
 
 .services-intro .image {
@@ -957,9 +956,11 @@ ul li {
   }
 }
 
-#about-page-main > * {
-  width: 50%;
-  height: 100%;
+@media (min-width: 769px) {
+  #about-page-main > * {
+    width: 50%;
+    height: 100%;
+  }
 }
 
 #about-page-main > .content {
