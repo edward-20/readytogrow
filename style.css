@@ -909,25 +909,36 @@ ul li {
     margin: 0 auto;             /* Center the text container */
 }
 
-#separate-services-page {
-  padding-top: 0.5rem; /* Reduce the top padding */
-  margin-top: -10rem; /* Pull up the section if needed */
+.services-intro {
+  display: flex;
 }
-
-#separate-services-page .heading {
-  margin-bottom: 2rem; /* Reduce space below the title */
-}
-
-#separate-services-page .box-container {
-  padding-top: -2rem; /* Remove extra padding at the top of the boxes */
-}
-
-@media (min-width: 768px) {
+@media (max-width: 1023px) {
   .services-intro {
-    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .services-intro {
+    flex-direction: row;
     gap: 4rem;
-    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  #separate-services-page > .box-container {
+    grid-template-columns: 1;
+  }
+}
+@media (max-width: 768px) {
+  #separate-services-page > .box-container {
+    grid-template-columns: 2;
+  }
+}
+@media (min-width: 769px) {
+  #separate-services-page > .box-container {
+    grid-template-columns: 4;
   }
 }
 
