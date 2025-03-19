@@ -731,6 +731,29 @@ nav{
   background-color: #1CA2A5; 
 }
 
+#contacts-and-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#contacts-and-links h3 {
+  font-size: 2.2rem;
+  color: #D1D5DB;
+  padding: 1rem 0;
+}
+#contacts-and-links li {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+#contacts-and-links a {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
 /* end */
 
 /* media query */
