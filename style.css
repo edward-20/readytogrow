@@ -302,7 +302,6 @@ nav{
   }
   .about > * {
     width: 50%;
-    height: 100%;
   }
 }
 @media (min-width: 769px) {
@@ -312,6 +311,12 @@ nav{
   .about > * {
     width: 100%;
     height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about a {
+    width: 15ch;
   }
 }
 
@@ -322,11 +327,12 @@ nav{
   height: 100%;
 }
 
-/*
-.about .content h3{
+.about .content h3 {
   font-size: 3.5rem;
   color: var(--white);
   line-height: 1.5;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .about .content p{
@@ -334,7 +340,6 @@ nav{
   color: var(--white);
   line-height: 2;
 }
-  */
 
 /*
 .about .heading span {
