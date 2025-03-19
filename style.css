@@ -922,17 +922,14 @@ ul li {
   padding-top: -2rem; /* Remove extra padding at the top of the boxes */
 }
 
-.services-intro {
+@media (min-width: 768px) {
+  .services-intro {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 90%;
+  }
 }
-
-.services-intro .image {
-  margin-top: -6rem; /* Pull image up more to align with text */
-}
-
-.services-intro .content {
-  margin-top: -6rem; /* Pull text up more to align with image */
-}
-
 
 .subtitle {
   text-align: center;          /* Center-align the subheading */
