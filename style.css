@@ -938,3 +938,37 @@ ul li {
   margin-bottom: 2rem;         /* Adjust spacing below subheading if needed */
   text-transform: none !important;
 }
+
+
+#about-page-main{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #about-page-main {
+    flex-direction: column; 
+  }
+  #about-page-main > * {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+#about-page-main > * {
+  width: 50%;
+  height: 100%;
+}
+
+#about-page-main > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#about-page-main img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
