@@ -292,10 +292,6 @@ nav{
   height: 100vh;
 }
 
-.aboutd{
-  background: #FFFFFF;
-}
-
 .about .heading span {
   color: #FFFFFF; /* Use the light gray variable */
 }
