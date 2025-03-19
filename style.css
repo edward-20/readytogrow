@@ -353,7 +353,13 @@ nav{
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  .box-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
   .box-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -464,7 +470,6 @@ nav{
 /* FAQ Section */
 .faq {
   background: #1CA2A5; /* Same background as other sections */
-  padding: 3rem 7%;
 }
 
 .faq .heading {
