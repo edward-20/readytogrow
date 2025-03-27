@@ -9,10 +9,10 @@ document.querySelectorAll('.faq-container .faq-question').forEach(function(butto
 
 // Mobile Menu Toggle Functionality
 const menuBtn = document.querySelector('#menu-btn'); // Menu icon
-const navbar = document.querySelector('.navbar'); // Navbar links container
+const menuDropdown = document.querySelector('#menu-dropdown'); // Navbar links container
 
 menuBtn.addEventListener('click', () => {
-    navbar.classList.toggle('active'); // Toggle 'active' class to show/hide navbar
+    menuDropdown.classList.toggle('active'); // Toggle 'active' class to show/hide navbar
 });
 
 // Optional: Close menu when clicking a navbar link (on mobile)
