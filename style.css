@@ -13,7 +13,7 @@
     --laptop-max: 1024px;
     --desktop-max: 1200px;
 
-    --hx-padding-tablet-max: 5%;
+    --hx-padding-tablet-max: 3%;
     --hx-padding-laptop-max: 10%;
     --hx-padding-desktop-max: 12%;
     --hx-padding-large-max: 15%;
@@ -251,7 +251,7 @@ nav{
 
 .home .image img {
   width: 100%;
-  padding: 4rem;
+  padding: 5rem;
 }
 
 @media (max-width:768px) {
@@ -729,11 +729,14 @@ nav{
 
 #contacts-and-links {
   display: flex;
-  flex-direction: row;
   gap: 1rem;
-  justify-content: space-around;
   width: 100%;
   padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  #contacts-and-links {
+    gap: 2rem;
+  }
 }
 
 #contacts-and-links h3 {
