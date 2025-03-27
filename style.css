@@ -254,10 +254,11 @@ nav{
 }
 
 /* overly square screens will have home content poor unless the below is applied */
-@media (max-width: 768px) and (max-height: 768px) {
+@media (min-aspect-ratio: 0.95) and (max-aspect-ratio: 1.05) and (max-width: 768px) {
   .home .image img {
     width: 75%;
   }
+
   .home .content h3 {
     font-size: 5rem;
     color: var(--blue);
