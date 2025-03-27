@@ -1077,3 +1077,7 @@ li > a {
 .fa-bars {
   color: var(--blue);
 }
+
+a {
+  text-transform: none !important;
+}
